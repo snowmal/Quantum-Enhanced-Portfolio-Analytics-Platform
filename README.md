@@ -33,13 +33,8 @@ The portfolio system reuses `alice.py`, `carol_listener.py`, `surrogate_fit.py`,
 
 ## Architecture
 
-text
-
-Copy
-
-```
 ┌─────────────────────────────────────────────────────────────────────┐│                    THREE-PARTY FHE MODEL                            ││                                                                     ││  ALICE (data owner)          CAROL (encrypted evaluator)            ││  ├─ holds secret key         ├─ holds polynomial JSON only          ││  ├─ standardizes w → z       ├─ never sees plaintext                ││  ├─ encrypts: Enc(z)         ├─ evaluates: Enc(P_risk(w))           ││  ├─ sends to Carol     ────► │   using add + mul on ciphertexts     ││  ├─ receives Enc(score) ◄─── ├─ returns encrypted scores            ││  └─ decrypts → metrics       └─ (zero knowledge of portfolio)       ││                                                                     ││  PUBLIC CONTEXT: poly_modulus_degree=16384, scale=2⁴⁰, depth=4     │└─────────────────────────────────────────────────────────────────────┘Pipeline modes:  classical_plaintext  →  Markowitz w⊤Σw, no encryption  classical_encrypted  →  w⊤Σw polynomial in CKKS ciphertext       ✓ BUILT  quantum_plaintext    →  VQC surrogate, no encryption              ◉ PENDING  quantum_encrypted    →  VQC surrogate in CKKS ciphertext          ◉ PENDING
-```
+
 
 ---
 
