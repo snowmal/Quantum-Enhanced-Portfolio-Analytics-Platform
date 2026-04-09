@@ -33,8 +33,34 @@ The portfolio system reuses `alice.py`, `carol_listener.py`, `surrogate_fit.py`,
 
 ## Architecture
 
-┌─────────────────────────────────────────────────────────────────────┐│                    THREE-PARTY FHE MODEL                            ││                                                                     ││  ALICE (data owner)          CAROL (encrypted evaluator)            ││  ├─ holds secret key         ├─ holds polynomial JSON only          ││  ├─ standardizes w → z       ├─ never sees plaintext                ││  ├─ encrypts: Enc(z)         ├─ evaluates: Enc(P_risk(w))           ││  ├─ sends to Carol     ────► │   using add + mul on ciphertexts     ││  ├─ receives Enc(score) ◄─── ├─ returns encrypted scores            ││  └─ decrypts → metrics       └─ (zero knowledge of portfolio)       ││                                                                     ││  PUBLIC CONTEXT: poly_modulus_degree=16384, scale=2⁴⁰, depth=4     │└─────────────────────────────────────────────────────────────────────┘Pipeline modes:  classical_plaintext  →  Markowitz w⊤Σw, no encryption  classical_encrypted  →  w⊤Σw polynomial in CKKS ciphertext       ✓ BUILT  quantum_plaintext    →  VQC surrogate, no encryption              ◉ PENDING  quantum_encrypted    →  VQC surrogate in CKKS ciphertext          ◉ PENDING
+**Three-party encrypted inference model:**
 
+| Party | Role |
+|---|---|
+| **Alice** (data owner) | Holds secret key and raw portfolio weights. Standardizes w → z, encrypts via CKKS, sends ciphertext to Carol, receives encrypted scores back, decrypts only the final output. |
+| **Carol** (encrypted evaluator) | Holds only the polynomial model JSON. Never sees plaintext weights. Evaluates P_risk(w) and P_return(w) using only additions and multiplications on ciphertexts. |
+| **Public context** | Shared CKKS parameters (no secret key): poly_modulus_degree=16384, scale=2^40, depth=4. Enables Carol to compute without accessing Alice's data. |
+
+**Four pipeline modes:**
+
+| Mode | Model | Encrypted |
+|---|---|---|
+| `classical_plaintext` | Markowitz w⊤Σw | No — baseline |
+| `classical_encrypted` | w⊤Σw as polynomial | CKKS ✓ built |
+| `quantum_plaintext` | VQC surrogate | No — pending |
+| `quantum_encrypted` | VQC surrogate | CKKS — pending |
+
+**Data flow:**
+
+```
+Alice → standardize w → encrypt → Enc(z)
+                                      ↓
+                              Carol evaluates
+                              degree-2 polynomial
+                              on ciphertext only
+                                      ↓
+Alice ← decrypt ← Enc(P_risk(w)) ← result
+```
 
 ---
 
