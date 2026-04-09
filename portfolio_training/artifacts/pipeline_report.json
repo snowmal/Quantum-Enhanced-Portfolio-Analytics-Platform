@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-09T17:41:14.697492",
+  "date_range": {
+    "start": "2005-01-04",
+    "end": "2022-12-30"
+  },
+  "n_trading_days": 4530,
+  "tickers": [
+    "AAPL",
+    "ABT",
+    "BAC",
+    "CVX",
+    "GS",
+    "INTC",
+    "JNJ",
+    "JPM",
+    "KO",
+    "MCD",
+    "MSFT",
+    "PFE",
+    "PG",
+    "WMT",
+    "XOM"
+  ],
+  "n_assets": 15,
+  "returns_completeness_pct": {
+    "AAPL": 100.0,
+    "ABT": 100.0,
+    "BAC": 100.0,
+    "CVX": 100.0,
+    "GS": 100.0,
+    "INTC": 100.0,
+    "JNJ": 100.0,
+    "JPM": 100.0,
+    "KO": 100.0,
+    "MCD": 100.0,
+    "MSFT": 100.0,
+    "PFE": 100.0,
+    "PG": 100.0,
+    "WMT": 100.0,
+    "XOM": 100.0
+  },
+  "factor_columns": [
+    "Mkt-RF",
+    "SMB",
+    "HML",
+    "RF"
+  ],
+  "macro_columns": [
+    "VIX",
+    "FFR",
+    "yield_spread"
+  ],
+  "macro_completeness_pct": {
+    "VIX": 100.0,
+    "FFR": 100.0,
+    "yield_spread": 100.0
+  },
+  "annualised_return_pct": {
+    "AAPL": 27.28,
+    "ABT": 11.2,
+    "BAC": 0.3,
+    "CVX": 10.75,
+    "GS": 7.99,
+    "INTC": 3.6,
+    "JNJ": 8.57,
+    "JPM": 9.55,
+    "KO": 9.25,
+    "MCD": 14.55,
+    "MSFT": 14.15,
+    "PFE": 7.91,
+    "PG": 8.43,
+    "WMT": 7.56,
+    "XOM": 7.71
+  },
+  "annualised_vol_pct": {
+    "AAPL": 33.13,
+    "ABT": 22.08,
+    "BAC": 48.07,
+    "CVX": 29.14,
+    "GS": 35.68,
+    "INTC": 31.12,
+    "JNJ": 17.2,
+    "JPM": 37.38,
+    "KO": 18.6,
+    "MCD": 20.45,
+    "MSFT": 27.55,
+    "PFE": 23.22,
+    "PG": 18.35,
+    "WMT": 20.39,
+    "XOM": 27.01
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "key_portfolios": [
+    {
+      "label": "tangency",
+      "ann_return": 0.2119,
+      "ann_vol": 0.2288,
+      "sharpe": 0.8388
+    },
+    {
+      "label": "min_variance",
+      "ann_return": 0.0957,
+      "ann_vol": 0.144,
+      "sharpe": 0.5258
+    },
+    {
+      "label": "equal_weight",
+      "ann_return": 0.0992,
+      "ann_vol": 0.1913,
+      "sharpe": 0.414
+    }
+  ],
+  "frontier_points": 51,
+  "max_sharpe": 0.838784115893633,
+  "condition_number": 61.174164214623275,
+  "bl_applied": "False",
+  "weight_stability_std": {
+    "AAPL": 0.3856,
+    "ABT": 0.1104,
+    "BAC": 0.2189,
+    "CVX": 0.1598,
+    "GS": 0.2436,
+    "INTC": 0.1221,
+    "JNJ": 0.1143,
+    "JPM": 0.0818,
+    "KO": 0.0873,
+    "MCD": 0.2529,
+    "MSFT": 0.1469,
+    "PFE": 0.1588,
+    "PG": 0.1796,
+    "WMT": 0.1781,
+    "XOM": 0.1374
+  }
+}

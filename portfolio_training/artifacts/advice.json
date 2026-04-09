@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-04-09T18:12:19.850412",
+  "portfolio_timestamp": "2026-04-09T18:09:34.446585",
+  "summary": {
+    "health_score": 71,
+    "health_label": "CAUTION",
+    "health_color": "gold",
+    "headline": "3 risk factors require monitoring. Review the rebalancing signals and projection scenarios.",
+    "n_action": 1,
+    "n_watch": 3,
+    "n_info": 2,
+    "total_signals": 6
+  },
+  "advice": [
+    {
+      "category": "RISK",
+      "severity": "ACTION",
+      "title": "Portfolio volatility in high-risk regime",
+      "body": "Annualised portfolio volatility of 28.6% is above the 25.0% action threshold, indicating the portfolio is operating in a high-risk regime. Historical data shows elevated drawdown probability in this environment.",
+      "metric": "Ann. vol = 28.6%",
+      "action": "Reduce equity concentration. Increase allocation to low-beta assets or sectors with negative correlation to current risk drivers. Target vol below 18.0%.",
+      "priority": 6
+    },
+    {
+      "category": "RISK",
+      "severity": "WATCH",
+      "title": "Daily VaR approaching warning level",
+      "body": "Daily VaR of 2.19% is elevated. While not requiring immediate action, this warrants monitoring \u2014 especially given current macro conditions.",
+      "metric": "VaR 95% = 2.19%",
+      "action": "Monitor CRC attribution. If VaR reaches 3.5%, rebalance toward lower-volatility assets.",
+      "priority": 20
+    },
+    {
+      "category": "ALLOCATION",
+      "severity": "WATCH",
+      "title": "Elevated single-asset concentration: GS",
+      "body": "GS at 36.5% is approaching the concentration warning threshold. While not immediately concerning, monitor for further drift.",
+      "metric": "GS weight = 36.5%",
+      "action": "Set an alert if GS exceeds 50.0%. Consider capping at current level during next rebalance.",
+      "priority": 28
+    },
+    {
+      "category": "REBALANCING",
+      "severity": "WATCH",
+      "title": "Weight drift detected \u2014 AAPL drifted 53.2%",
+      "body": "Current weights have drifted from the optimal Markowitz tangency portfolio. AAPL has drifted 53.2% from its target weight. Total portfolio drift is 200.0%.",
+      "metric": "Max drift = 53.2% (AAPL)",
+      "action": "Schedule a rebalance to bring weights back to the optimal allocation. Consider transaction costs \u2014 only rebalance if drift exceeds cost threshold.",
+      "priority": 40
+    },
+    {
+      "category": "RISK",
+      "severity": "INFO",
+      "title": "Strong risk-adjusted return \u2014 Sharpe above target",
+      "body": "Annualised Sharpe of 2.601 exceeds the 0.7 target. The portfolio is generating strong risk-adjusted returns in the current regime.",
+      "metric": "Sharpe = 2.601",
+      "action": "Maintain current allocation. Consider locking in gains by slightly reducing the highest-weight positions if they have drifted above target.",
+      "priority": 70
+    },
+    {
+      "category": "PROJECTION",
+      "severity": "INFO",
+      "title": "Positive 3-month expected return (21.7%)",
+      "body": "Monte Carlo projects a 21.7% expected gain over 3 months with a 2% probability of a 10%+ loss. The risk/reward profile looks favourable.",
+      "metric": "E[return, 3M] = 21.7%",
+      "action": "No immediate action needed. Maintain current allocation and monitor for changes in the macro environment.",
+      "priority": 80
+    }
+  ],
+  "thresholds_used": {
+    "VAR_WARN_PCT": 2.0,
+    "VAR_ACTION_PCT": 3.5,
+    "VOL_WARN_ANN_PCT": 18.0,
+    "VOL_ACTION_ANN_PCT": 25.0,
+    "MAX_DD_WARN_PCT": 10.0,
+    "MAX_DD_ACTION_PCT": 20.0,
+    "CONC_WARN_PCT": 35.0,
+    "CONC_ACTION_PCT": 50.0,
+    "SECTOR_CONC_PCT": 60.0,
+    "MOMENTUM_STRONG_PCT": 5.0,
+    "MOMENTUM_WEAK_PCT": -5.0,
+    "SHARPE_STRONG": 0.7,
+    "SHARPE_WEAK": 0.2,
+    "SHARPE_NEGATIVE": 0.0,
+    "PROB_LOSS_10PCT_WARN": 0.3,
+    "PROB_LOSS_10PCT_ACT": 0.5,
+    "REBAL_THRESHOLD_PCT": 5.0,
+    "HIGH_CORR_WARN": 0.85
+  },
+  "runtime_ms": 7.66
+}

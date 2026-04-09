@@ -1,0 +1,46 @@
+{
+  "equal_weight": {
+    "parametric_var_95_pct": 1.943,
+    "parametric_es_95_pct": 2.4466,
+    "historical_var_95_pct": 1.7379,
+    "historical_es_95_pct": 2.938
+  },
+  "var_coverage_test": {
+    "n_observations": 4279,
+    "n_breaches": 247,
+    "breach_rate": 0.0577,
+    "target_rate": 0.05,
+    "kupiec_ratio": 1.154,
+    "assessment": "well-calibrated"
+  },
+  "sqrt_approximation": {
+    "chebyshev_rmse": 0.0001268138179449311,
+    "chebyshev_max_err": 0.0013999053943999406,
+    "taylor_test": {
+      "at_current_var": 0.00014524712227010798,
+      "true_sqrt": 0.01205185140424939,
+      "taylor_approx": 0.01205185140424939,
+      "cheb_approx": 0.012178564447262716
+    }
+  },
+  "crisis_analysis": {
+    "GFC_2008": {
+      "hist_var_95": 5.763,
+      "hist_es_95": 7.566,
+      "ann_vol_pct": 55.96,
+      "total_return_pct": -35.93
+    },
+    "COVID_2020": {
+      "hist_var_95": 5.75,
+      "hist_es_95": 8.978,
+      "ann_vol_pct": 63.41,
+      "total_return_pct": -16.68
+    },
+    "Bear_2022": {
+      "hist_var_95": 1.998,
+      "hist_es_95": 2.649,
+      "ann_vol_pct": 19.34,
+      "total_return_pct": -5.99
+    }
+  }
+}

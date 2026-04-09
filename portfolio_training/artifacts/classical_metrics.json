@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-04-09T17:43:24.587591",
+  "model": "Classical Markowitz (SLSQP, long-only)",
+  "data_range": {
+    "start": "2005-01-04",
+    "end": "2022-12-30"
+  },
+  "n_assets": 15,
+  "tickers": [
+    "AAPL",
+    "ABT",
+    "BAC",
+    "CVX",
+    "GS",
+    "INTC",
+    "JNJ",
+    "JPM",
+    "KO",
+    "MCD",
+    "MSFT",
+    "PFE",
+    "PG",
+    "WMT",
+    "XOM"
+  ],
+  "backtest_config": {
+    "train_years": 3,
+    "test_months": 12,
+    "step_months": 3,
+    "lambda": 0.5
+  },
+  "overall": {
+    "sharpe": 0.383,
+    "max_drawdown": -0.475,
+    "hist_var_95": 0.0231,
+    "hist_es_95": 0.0367,
+    "avg_turnover": 0.7024
+  },
+  "rolling_windows": {
+    "sharpe": {
+      "mean": 0.74,
+      "std": 0.9449,
+      "min": -1.1798,
+      "max": 2.8744,
+      "median": 0.8103
+    },
+    "ann_return": {
+      "mean": 0.1308,
+      "std": 0.205,
+      "min": -0.4573,
+      "max": 0.5362,
+      "median": 0.185
+    },
+    "ann_vol": {
+      "mean": 0.2153,
+      "std": 0.0945,
+      "min": 0.0998,
+      "max": 0.4928,
+      "median": 0.1779
+    },
+    "max_drawdown": {
+      "mean": -0.1771,
+      "std": 0.1268,
+      "min": -0.5351,
+      "max": -0.0325,
+      "median": -0.13
+    },
+    "hist_var_95": {
+      "mean": 0.0217,
+      "std": 0.0093,
+      "min": 0.0102,
+      "max": 0.0506,
+      "median": 0.0182
+    },
+    "hist_es_95": {
+      "mean": 0.0311,
+      "std": 0.0146,
+      "min": 0.0145,
+      "max": 0.0726,
+      "median": 0.0262
+    },
+    "turnover": {
+      "mean": 0.7024,
+      "std": 0.4514,
+      "min": 0.0,
+      "max": 1.8887,
+      "median": 0.6664
+    }
+  },
+  "var_coverage": {
+    "mean_breach_rate": 0.0698,
+    "target_rate": 0.05,
+    "kupiec_ratio": 1.396,
+    "assessment": "well-calibrated"
+  },
+  "crisis_performance": {
+    "GFC_2008-09": {
+      "n_days": 146,
+      "sharpe": -1.038,
+      "total_return": -20.52,
+      "ann_vol_pct": 36.07,
+      "hist_var_95": 3.302,
+      "hist_es_95": 4.45,
+      "max_drawdown": -30.97
+    },
+    "COVID_2020": {
+      "n_days": 63,
+      "sharpe": -0.739,
+      "total_return": -8.89,
+      "ann_vol_pct": 50.8,
+      "hist_var_95": 5.469,
+      "hist_es_95": 6.95,
+      "max_drawdown": -26.96
+    },
+    "Bear_2022": {
+      "n_days": 251,
+      "sharpe": -0.072,
+      "total_return": 0.82,
+      "ann_vol_pct": 16.3,
+      "hist_var_95": 1.512,
+      "hist_es_95": 2.197,
+      "max_drawdown": -16.32
+    }
+  },
+  "weight_stability_std": {
+    "AAPL": 0.2954,
+    "ABT": 0.0847,
+    "BAC": 0.109,
+    "CVX": 0.0245,
+    "GS": 0.0891,
+    "INTC": 0.0494,
+    "JNJ": 0.1546,
+    "JPM": 0.0646,
+    "KO": 0.0486,
+    "MCD": 0.2917,
+    "MSFT": 0.2672,
+    "PFE": 0.1702,
+    "PG": 0.0632,
+    "WMT": 0.0702,
+    "XOM": 0.0
+  },
+  "n_backtest_windows": 56
+}

@@ -1,0 +1,45 @@
+17:44:02 [LIVE] ========================================================
+17:44:02 [LIVE]   LIVE PORTFOLIO OPTIMIZER
+17:44:02 [LIVE]   Poll interval : 300s
+17:44:02 [LIVE]   Lambda        : 0.5
+17:44:02 [LIVE]   Lambda scan   : False
+17:44:02 [LIVE]   HPC n_jobs    : -1
+17:44:02 [LIVE] ========================================================
+17:44:02 [LIVE] Static artifacts loaded — 15 assets: ['AAPL', 'ABT', 'BAC', 'CVX', 'GS', 'INTC', 'JNJ', 'JPM', 'KO', 'MCD', 'MSFT', 'PFE', 'PG', 'WMT', 'XOM']
+17:44:02 [LIVE] ── Cycle 1 ──────────────────────────────────────
+17:44:05 [LIVE] Live data: 252 days, latest=2026-04-09
+17:44:05 [LIVE]   Sharpe=2.601  Vol=28.6%  VaR=2.19%  Optimized in 33ms
+17:44:05 [LIVE] --once flag set — exiting after first cycle.
+17:44:05 [LIVE] Live optimizer stopped cleanly.
+17:44:15 [LIVE] ========================================================
+17:44:15 [LIVE]   LIVE PORTFOLIO OPTIMIZER
+17:44:15 [LIVE]   Poll interval : 300s
+17:44:15 [LIVE]   Lambda        : 0.5
+17:44:15 [LIVE]   Lambda scan   : False
+17:44:15 [LIVE]   HPC n_jobs    : -1
+17:44:15 [LIVE] ========================================================
+17:44:15 [LIVE] Static artifacts loaded — 15 assets: ['AAPL', 'ABT', 'BAC', 'CVX', 'GS', 'INTC', 'JNJ', 'JPM', 'KO', 'MCD', 'MSFT', 'PFE', 'PG', 'WMT', 'XOM']
+17:44:15 [LIVE] ── Cycle 1 ──────────────────────────────────────
+17:44:18 [LIVE] Live data: 252 days, latest=2026-04-09
+17:44:18 [LIVE]   Sharpe=2.601  Vol=28.6%  VaR=2.19%  Optimized in 33ms
+17:44:18 [LIVE]   Next refresh in 300s …
+17:49:19 [LIVE] ── Cycle 2 ──────────────────────────────────────
+17:49:21 [LIVE] Live data: 252 days, latest=2026-04-09
+17:49:21 [LIVE]   Sharpe=2.601  Vol=28.6%  VaR=2.19%  Optimized in 36ms
+17:49:21 [LIVE]   Next refresh in 300s …
+17:54:22 [LIVE] ── Cycle 3 ──────────────────────────────────────
+17:54:25 [LIVE] Live data: 252 days, latest=2026-04-09
+17:54:25 [LIVE]   Sharpe=2.601  Vol=28.6%  VaR=2.19%  Optimized in 26ms
+17:54:25 [LIVE]   Next refresh in 300s …
+17:59:26 [LIVE] ── Cycle 4 ──────────────────────────────────────
+17:59:28 [LIVE] Live data: 252 days, latest=2026-04-09
+17:59:28 [LIVE]   Sharpe=2.601  Vol=28.6%  VaR=2.19%  Optimized in 48ms
+17:59:28 [LIVE]   Next refresh in 300s …
+18:04:29 [LIVE] ── Cycle 5 ──────────────────────────────────────
+18:04:31 [LIVE] Live data: 252 days, latest=2026-04-09
+18:04:31 [LIVE]   Sharpe=2.601  Vol=28.6%  VaR=2.19%  Optimized in 30ms
+18:04:31 [LIVE]   Next refresh in 300s …
+18:09:32 [LIVE] ── Cycle 6 ──────────────────────────────────────
+18:09:34 [LIVE] Live data: 252 days, latest=2026-04-09
+18:09:34 [LIVE]   Sharpe=2.601  Vol=28.6%  VaR=2.19%  Optimized in 58ms
+18:09:34 [LIVE]   Next refresh in 300s …

@@ -1,0 +1,29 @@
+{
+  "GFC_2008-09": {
+    "n_days": 146,
+    "sharpe": -1.038,
+    "total_return": -20.52,
+    "ann_vol_pct": 36.07,
+    "hist_var_95": 3.302,
+    "hist_es_95": 4.45,
+    "max_drawdown": -30.97
+  },
+  "COVID_2020": {
+    "n_days": 63,
+    "sharpe": -0.739,
+    "total_return": -8.89,
+    "ann_vol_pct": 50.8,
+    "hist_var_95": 5.469,
+    "hist_es_95": 6.95,
+    "max_drawdown": -26.96
+  },
+  "Bear_2022": {
+    "n_days": 251,
+    "sharpe": -0.072,
+    "total_return": 0.82,
+    "ann_vol_pct": 16.3,
+    "hist_var_95": 1.512,
+    "hist_es_95": 2.197,
+    "max_drawdown": -16.32
+  }
+}

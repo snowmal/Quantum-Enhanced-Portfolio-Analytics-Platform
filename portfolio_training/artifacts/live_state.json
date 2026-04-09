@@ -1,0 +1,266 @@
+{
+  "timestamp": "2026-04-09T18:09:34.446585",
+  "market_date": "2026-04-09",
+  "market_open": false,
+  "tickers": [
+    "AAPL",
+    "ABT",
+    "BAC",
+    "CVX",
+    "GS",
+    "INTC",
+    "JNJ",
+    "JPM",
+    "KO",
+    "MCD",
+    "MSFT",
+    "PFE",
+    "PG",
+    "WMT",
+    "XOM"
+  ],
+  "live_prices": {
+    "AAPL": 260.489990234375,
+    "ABT": 102.72000122070312,
+    "BAC": 52.709999084472656,
+    "CVX": 190.36000061035156,
+    "GS": 903.719970703125,
+    "INTC": 61.720001220703125,
+    "JNJ": 241.30999755859375,
+    "JPM": 310.3299865722656,
+    "KO": 78.18000030517578,
+    "MCD": 309.54998779296875,
+    "MSFT": 373.07000732421875,
+    "PFE": 27.219999313354492,
+    "PG": 146.66000366210938,
+    "WMT": 129.1300048828125,
+    "XOM": 155.0399932861328
+  },
+  "intraday_return_pct": {
+    "AAPL": 0.614,
+    "ABT": -0.811,
+    "BAC": 1.6,
+    "CVX": -1.312,
+    "GS": -0.224,
+    "INTC": 4.699,
+    "JNJ": 0.004,
+    "JPM": 0.766,
+    "KO": 1.152,
+    "MCD": 0.827,
+    "MSFT": -0.337,
+    "PFE": -0.91,
+    "PG": 1.215,
+    "WMT": 1.469,
+    "XOM": -0.755
+  },
+  "portfolio_intraday_pct": 1.4844,
+  "optimization": {
+    "lambda": 0.5,
+    "lambda_scan": false,
+    "runtime_ms": 58.29,
+    "weights": {
+      "AAPL": 0.0,
+      "ABT": 0.0,
+      "BAC": 0.0,
+      "CVX": 0.0,
+      "GS": 0.364743,
+      "INTC": 0.333022,
+      "JNJ": 0.302235,
+      "JPM": 0.0,
+      "KO": 0.0,
+      "MCD": 0.0,
+      "MSFT": 0.0,
+      "PFE": 0.0,
+      "PG": 0.0,
+      "WMT": 0.0,
+      "XOM": 0.0
+    },
+    "ann_return_pct": 78.271,
+    "ann_vol_pct": 28.557,
+    "ann_sharpe": 2.6008,
+    "frontier": []
+  },
+  "risk": {
+    "variance": 0.00032362,
+    "sigma_p_daily": 0.017989,
+    "sigma_p_annual_pct": 28.557,
+    "var_95_pct": 2.1918,
+    "es_95_pct": 3.2891,
+    "max_drawdown_pct": -12.012,
+    "cond_number": 61.1
+  },
+  "attribution": {
+    "AAPL": {
+      "weight_pct": 0.0,
+      "MRC": 0.008161,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    },
+    "ABT": {
+      "weight_pct": 0.0,
+      "MRC": 0.002097,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    },
+    "BAC": {
+      "weight_pct": 0.0,
+      "MRC": 0.006993,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    },
+    "CVX": {
+      "weight_pct": 0.0,
+      "MRC": 0.002295,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    },
+    "GS": {
+      "weight_pct": 36.474,
+      "MRC": 0.012702,
+      "CRC": 0.004633,
+      "CRC_pct": 25.755
+    },
+    "INTC": {
+      "weight_pct": 33.302,
+      "MRC": 0.038146,
+      "CRC": 0.012704,
+      "CRC_pct": 70.617
+    },
+    "JNJ": {
+      "weight_pct": 30.223,
+      "MRC": 0.002159,
+      "CRC": 0.000653,
+      "CRC_pct": 3.628
+    },
+    "JPM": {
+      "weight_pct": 0.0,
+      "MRC": 0.007388,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    },
+    "KO": {
+      "weight_pct": 0.0,
+      "MRC": 0.000227,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    },
+    "MCD": {
+      "weight_pct": 0.0,
+      "MRC": -2.1e-05,
+      "CRC": -0.0,
+      "CRC_pct": -0.0
+    },
+    "MSFT": {
+      "weight_pct": 0.0,
+      "MRC": 0.004216,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    },
+    "PFE": {
+      "weight_pct": 0.0,
+      "MRC": 0.004732,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    },
+    "PG": {
+      "weight_pct": 0.0,
+      "MRC": 0.000504,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    },
+    "WMT": {
+      "weight_pct": 0.0,
+      "MRC": 0.002899,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    },
+    "XOM": {
+      "weight_pct": 0.0,
+      "MRC": 0.001347,
+      "CRC": 0.0,
+      "CRC_pct": 0.0
+    }
+  },
+  "momentum": {
+    "AAPL": {
+      "5d": 1.883,
+      "20d": -0.123,
+      "signal": "bullish"
+    },
+    "ABT": {
+      "5d": 0.332,
+      "20d": -7.074,
+      "signal": "bullish"
+    },
+    "BAC": {
+      "5d": 6.749,
+      "20d": 8.283,
+      "signal": "bearish"
+    },
+    "CVX": {
+      "5d": -3.637,
+      "20d": -0.748,
+      "signal": "bearish"
+    },
+    "GS": {
+      "5d": 4.934,
+      "20d": 9.264,
+      "signal": "bearish"
+    },
+    "INTC": {
+      "5d": 25.078,
+      "20d": 25.182,
+      "signal": "bearish"
+    },
+    "JNJ": {
+      "5d": -1.158,
+      "20d": -0.694,
+      "signal": "bearish"
+    },
+    "JPM": {
+      "5d": 5.448,
+      "20d": 8.145,
+      "signal": "bearish"
+    },
+    "KO": {
+      "5d": 2.723,
+      "20d": 1.391,
+      "signal": "bullish"
+    },
+    "MCD": {
+      "5d": 0.733,
+      "20d": -4.935,
+      "signal": "bullish"
+    },
+    "MSFT": {
+      "5d": 0.997,
+      "20d": -8.182,
+      "signal": "bullish"
+    },
+    "PFE": {
+      "5d": -4.77,
+      "20d": -0.293,
+      "signal": "bearish"
+    },
+    "PG": {
+      "5d": 1.768,
+      "20d": -4.441,
+      "signal": "bullish"
+    },
+    "WMT": {
+      "5d": 3.459,
+      "20d": 4.671,
+      "signal": "bearish"
+    },
+    "XOM": {
+      "5d": -3.635,
+      "20d": 2.257,
+      "signal": "bearish"
+    }
+  },
+  "data_quality": {
+    "n_days": 252,
+    "rolling_window": 252,
+    "shrinkage_applied": "False"
+  }
+}
